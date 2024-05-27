@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../Assets/CSS/output.css">
+</head>
+<body>
+    <header class="flex flex-col w-full relative">
+        <div class="w-full h-6 bg-[#F7BDF6]"></div>
+        <div class="grid-container bg-white py-4 max-md:border max-md:border-[#F7BDF6]/70">
+            <div class="flex items-center justify-between gap-6">
+                <a href="../index.html" class="font-Caveat font-bold text-4xl">NailShop</a>
+                <nav id="menu" class="flex items-center gap-6 transition-all duration-500 z-[4] max-md:flex-col max-md:bg-white max-md:w-full max-md:absolute max-md:left-0 max-md:py-4 max-md:top-0 max-md:-translate-y-full">
+                    <a href="catalog.html" class="flex flex-col after:w-0 after:h-px after:bg-[#292929] after:transition-all after:duration-500 hover:after:w-full">Каталог</a>
+                    <a href="profile.html" class="transition-all duration-500 hover:text-[#F242EE]/70">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-3xl" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1=""><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"></path></svg>
+                    </a>
+                    <a href="favourites.html" class="transition-all duration-500 hover:text-[#F242EE]/70">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-3xl" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1=""><path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125"></path></svg>
+                    </a>
+                    <a href="cart.html" class="transition-all duration-500 hover:text-[#F242EE]/70">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-3xl" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1=""><path fill="currentColor" d="M17 18c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2m0-3l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1v2h2l3.6 7.59L3.62 17H19v-2z"></path></svg>
+                    </a>
+                    <a href="auth.html" class="px-4 py-2 rounded-xl opacity-70 border border-[#F242EE] bg-[#F242EE] text-white transition-all duration-500 hover:bg-transparent hover:text-[#F242EE]">Вход</a>
+                </nav>
+                <button id="toggler" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-3xl" width="1em" height="1em" viewBox="0 0 256 256" data-v-4fa0a2a1=""><path fill="currentColor" d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12M40 76h176a12 12 0 0 0 0-24H40a12 12 0 0 0 0 24m176 104H40a12 12 0 0 0 0 24h176a12 12 0 0 0 0-24"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="overlay" class="fixed inset-0 top-[100px] bg-black/70 md:hidden z-[3] hidden"></div>
+    </header>
+
+    <main class="grid-container gap-y-20 grow my-10">
+        <div class="flex max-lg:flex-col gap-6">
+            <div class="lg:w-3/4 flex flex-col gap-6">
+                <div class="flex max-md:flex-col items-center gap-4 p-4 rounded-xl border border-[#F7BDF6]/70 shadow-[0px_0px_13px_-7px_black]">
+                    <img src="../Assets/Images/products/3.jpg" alt="" class="aspect-square object-cover w-full md:w-2/5 rounded-xl">
+                    <div class="flex flex-col gap-2 w-full md:w-3/5">
+                        <p class="text-2xl font-semibold tracking-widest">Гель Premium Milk</p>
+                        <p>Цвет: розовый</p>
+                        <p>350 ₽</p>
+                        <div class="flex items-center gap-4">
+                            <button class="flex items-center justify-center w-10 h-10 border border-[#F7BDF6]/70 rounded-xl">-</button>
+                            <p>1</p>
+                            <button class="flex items-center justify-center w-10 h-10 border border-[#F7BDF6]/70 rounded-xl">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex max-md:flex-col items-center gap-4 p-4 rounded-xl border border-[#F7BDF6]/70 shadow-[0px_0px_13px_-7px_black]">
+                    <img src="../Assets/Images/products/3.jpg" alt="" class="aspect-square object-cover w-full md:w-2/5 rounded-xl">
+                    <div class="flex flex-col gap-2 w-full md:w-3/5">
+                        <p class="text-2xl font-semibold tracking-widest">Гель Premium Milk</p>
+                        <p>Цвет: розовый</p>
+                        <p>350 ₽</p>
+                        <div class="flex items-center gap-4">
+                            <button class="flex items-center justify-center w-10 h-10 border border-[#F7BDF6]/70 rounded-xl">-</button>
+                            <p>1</p>
+                            <button class="flex items-center justify-center w-10 h-10 border border-[#F7BDF6]/70 rounded-xl">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex max-md:flex-col items-center gap-4 p-4 rounded-xl border border-[#F7BDF6]/70 shadow-[0px_0px_13px_-7px_black]">
+                    <img src="../Assets/Images/products/3.jpg" alt="" class="aspect-square object-cover w-full md:w-2/5 rounded-xl">
+                    <div class="flex flex-col gap-2 w-full md:w-3/5">
+                        <p class="text-2xl font-semibold tracking-widest">Гель Premium Milk</p>
+                        <p>Цвет: розовый</p>
+                        <p>350 ₽</p>
+                        <div class="flex items-center gap-4">
+                            <button class="flex items-center justify-center w-10 h-10 border border-[#F7BDF6]/70 rounded-xl">-</button>
+                            <p>1</p>
+                            <button class="flex items-center justify-center w-10 h-10 border border-[#F7BDF6]/70 rounded-xl">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="lg:w-1/4 flex flex-col gap-6 p-4 rounded-xl border border-[#F7BDF6]/70 shadow-[0px_0px_13px_-7px_black] h-fit">
+                <input required type="text" class="px-4 py-2 border border-[#F7BDF6]/70 rounded-xl focus:outline-none" placeholder="Адрес доставки">
+                <textarea class="px-4 py-2 border border-[#F7BDF6]/70 rounded-xl focus:outline-none" placeholder="Комментарий к заказу"></textarea>
+                <div class="flex flex-col gap-2">
+                    <p class="font-semibold tracking-widest">Способ оплаты</p>
+                    <label class="flex items-center gap-2">
+                        <input type="radio">
+                        <span>Онлайн</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio">
+                        <span>При получении</span>
+                    </label>
+                </div>
+                <p>Итого: 350 ₽</p>
+                <button class="px-4 py-2 rounded-xl border text-white hover:text-[#F242EE]/70 border-[#F242EE]/70 bg-[#F242EE]/70 transition-all duration-500 hover:bg-transparent">Оформить заказ</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="grid-container bg-[#F7BDF6] py-4">
+        <div class="flex max-md:flex-col items-center lg:items-start justify-between gap-4">
+            <a href="../index.html" class="font-Caveat font-bold text-4xl">NailShop</a>
+            <div class="flex items-center gap-4 max-md:flex-col">
+                <div class="flex items-center gap-2">
+                    <a class="transition-all duration-500 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-4xl transition-all duration-500 group-hover:text-white" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1=""><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.75-.42 1-.68 1.03c-.58.05-1.02-.38-1.58-.75c-.88-.58-1.38-.94-2.23-1.5c-.99-.65-.35-1.01.22-1.59c.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02c-.09.02-1.49.95-4.22 2.79c-.4.27-.76.41-1.08.4c-.36-.01-1.04-.2-1.55-.37c-.63-.2-1.12-.31-1.08-.66c.02-.18.27-.36.74-.55c2.92-1.27 4.86-2.11 5.83-2.51c2.78-1.16 3.35-1.36 3.73-1.36c.08 0 .27.02.39.12c.1.08.13.19.14.27c-.01.06.01.24 0 .38"></path></svg>
+                    </a>
+                    <a class="transition-all duration-500 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-4xl transition-all duration-500 group-hover:text-white" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1=""><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.2 8.2 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18s.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01"></path></svg>
+                    </a>
+                    <a class="transition-all duration-500 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-4xl transition-all duration-500 group-hover:text-white" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1=""><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"></path></svg>
+                    </a>
+                </div>
+                <a href="tel:8 912 345-67-89" class="text-2xl flex flex-col after:w-0 after:h-px after:bg-[#292929] after:transition-all after:duration-500 hover:after:w-full">8 912 345-67-89</a>
+            </div>
+        </div>
+        <p class="text-center font-Comforter text-4xl">Влюбись в искусство маникюра</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+</body>
+</html>
